@@ -31,7 +31,7 @@ export const Footer = () => {
                 <div className="text-white/40">&copy; 2024. All rights reserverd.</div>
                 <nav className="flex flex-col items-center gap-8 md:flex-row">
                    {footerLinks.map((link)=>(
-                       <a href={`//${link.href}`} target="_blank">
+                       <a href={`//${link.href}`} target="_blank" key={link.title}>
                           <span>{link.title}</span>
                        </a>
                    ))}
