@@ -75,7 +75,7 @@ export const HeroSection = () => {
         </h1>
         <p className="mt-4 text-center text-white/62 md:text-lg">
           I sepacilized in transforming designs into functional, high performing
-          web applications. Let's Discuss next project.
+          web applications. Let&apos;s Discuss next project.
         </p>
         <div className="flex flex-col items-center mt-8 gap-4 justify-center md:flex-row">
           <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
