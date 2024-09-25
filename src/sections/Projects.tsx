@@ -3,6 +3,7 @@ import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import docwise from "@/assets/images/docwise.png";
+import lms from "@/assets/images/lms.png";
 import productify from "@/assets/images/productify.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
@@ -41,16 +42,18 @@ const portfolioProjects = [
     image: productify,
   },
   {
-    company: "Quantum Dynamics",
+    company: "Learning Management System",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "Course Bundler",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Built LMS for course creation." },
+      { title: "Implemented video upload and playback" },
+      { title: "Secured users with JWT verification" },
+      { title: "Integrated Razorpay for payments" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "",
+    github:"github.com/harsh-singh-repository/Learning-management-system",
+    image: lms,
   },
 ];
 
@@ -100,7 +103,7 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <div className="flex items-center justify-evenly">
+                  <div className="flex items-center gap-2">
                     <a href={`//${project.link}`} target="_blank">
                       <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6">
                         <span>View Live Site</span>

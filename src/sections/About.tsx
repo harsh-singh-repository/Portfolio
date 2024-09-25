@@ -2,23 +2,29 @@
 
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
-import StarIcon from "@/assets/icons/star.svg";
+import TailwindCss from "@/assets/icons/tailwindcss.svg"
 import bookImage from "@/assets/images/book-cover.png";
+import Docker from "@/assets/icons/docker.svg";
 import Image from "next/image";
-import JavascriptIcon from "@/assets/icons/square-js.svg";
+import JavascriptIcon from "@/assets/icons/javascript.svg";
 import HTMLIcon from "@/assets/icons/html5.svg";
-import CssIcon from "@/assets/icons/css3.svg";
+import Prisma from "@/assets/icons/prisma.svg";
+import CssIcon from "@/assets/icons/css.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import GithubIcon from "@/assets/icons/github.svg";
+import Nextjs from "@/assets/icons/nextjs.svg"
 import NodeJsIcon from "@/assets/icons/node-js.svg";
 import ExpressIcon from "@/assets/icons/icons8-express-js.svg";
 import MongoDb from "@/assets/icons/mongodb-svgrepo-com.svg";
 import mapImage from "@/assets/images/map.png";
 import smileMimoji from "@/assets/images/memoji-smile.png";
+import Postgres from "@/assets/icons/postgres.svg";
+import Figma from "@/assets/icons/figma.svg";
 import CardHeader from "@/components/CardHeader";
 import { ToolboxComponent } from "@/components/ToolboxComponent";
 import {motion} from "framer-motion";
 import { useRef } from "react";
+import { image } from "framer-motion/client";
 
 const toolBoxItems = [
   {
@@ -27,15 +33,15 @@ const toolBoxItems = [
   },
   {
     title: "HTML5",
-    iconType: <HTMLIcon />,
+    iconType: <HTMLIcon className="size-10"/>,
   },
   {
     title: "CSS3",
-    iconType: <CssIcon />,
+    iconType: <CssIcon className="size-10"/>,
   },
   {
     title: "React",
-    iconType: <ReactIcon />,
+    iconType: <ReactIcon className="size-10"/>,
   },
   {
     title: "Github",
@@ -52,6 +58,30 @@ const toolBoxItems = [
   {
     title: "MongoDB",
     iconType: <MongoDb className="size-10" />,
+  },
+  {
+    title: "Nextjs",
+    iconType: <Nextjs className="size-10" />,
+  },
+  {
+    title: "Tailwind Css",
+    iconType: <TailwindCss className="size-10" />,
+  },
+  {
+    title: "Docker",
+    iconType: <Docker className="size-10" />,
+  },
+  {
+    title: "Prisma",
+    iconType: <Prisma className="size-10" />,
+  },
+  {
+    title: "PostgresSQL",
+    iconType: <Postgres className="size-10" />,
+  },
+  {
+    title: "Figma",
+    iconType: <Figma className="size-10" />,
   },
 ];
 
