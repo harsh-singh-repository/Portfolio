@@ -5,6 +5,7 @@ import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg"
 import SparkleIcon from "@/assets/icons/sparkle.svg"
 import Hero_orbit from "@/components/Hero_orbit";
+import Resume from "@/assets/icons/resume.png"
 
 
 export const HeroSection = () => {
@@ -77,15 +78,21 @@ export const HeroSection = () => {
           I sepacilized in transforming designs into functional, high performing
           web applications. Let&apos;s Discuss next project.
         </p>
+        <div className="container relative z-20">
         <div className="flex flex-col items-center mt-8 gap-4 justify-center md:flex-row">
           <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
-            <span className="font-semibold">Explore my work</span>
-            <ArrowDown className="size-4" />
+            <a href="#project" className="inline-flex items-center gap-2">
+               <span className="font-semibold">Explore my work</span>
+                <ArrowDown className="size-4" />
+            </a>
           </button>
           <button className="inline-flex items-center gap-2 border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-            <span className="font-semibold">👋</span>
-            <span>Let's Connect</span>
+            <a href="https://drive.google.com/file/d/1Pyz3oDXo645bvbfIJ3rL6pawBDUUl9_W/view?usp=drive_link" className="inline-flex items-center gap-2" target="_blank">
+              <span className="font-semibold"><Image src={Resume} alt="Resume" height={15} width={15}/></span>
+              <span>View Resume</span>
+            </a>
           </button>
+        </div>
         </div>
       </div>
     </div>
